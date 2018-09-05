@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DNA Swarm Robots by Team Handai</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+	body {position: relative;
+	}
+    .bs-example{
+        margin: 100px;
+    }
+	.affix {
+      top: 230px;
+      z-index: 9999 !important;
+  }
+</style>
+	
+</head> 
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+<header class="bs-docs-nav navbar-static-top" id="top"> 
+  <div class="container"> <div class="navbar-header"> <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="index.html" class="navbar-brand">DNA swarm robots by team Handai</a> </div>  
+  <ul class="nav navbar-nav">
+		<li style="background-color: #4096D0;"> <a style="color:white">Design</a> </li>
+	  <li> <a href="experiment.html">Experiment</a> </li>
+		<li> <a href="note.html">Lab note</a> </li>
+		<li> <a href="results.html">Results</a> </li>
+		<li> <a href="future.html">Future</a> </li>
+		<li> <a href="team.html">Team</a> </li>
+		  </ul> 
+		
+		
+		<ul class="nav navbar-nav navbar-right"> 
+		  <li><a href="contact.html" >Contact</a></li> 
+		   </ul>  </div> 
+	
+	<header>
+	<div class="bs-docs-header" id="content" tabindex="-1" style ="background-color: #2783E8;"> <div class="container-fluid" ><div class="row">
+  <div class="col-xs-12 col-md-8 jumbotron"><h1 style="color: white; padding: 10px 10px 10px 20px">Design 
+  
+  </h1>
+  
+  <p style="color:white; font-size:160%; padding-left: 20px">There are several steps to this part. Firstly, a monomer is needed in which the monomer should be stable, highly modifiable and easy to fold. Then, the connection was thought of, we needed a connection that is strong enough, but is modifiable and possibly reversible. Finally, we needed to pair this connection with switches such as aptamers to enable aggregation through ligand binding or other external factors.</p></div>
+  <div class="col-md-4 col-xs-12"><img  src="index/1.png" class="img-responsive center-block" alt=""/></div>
+		</div></div></div>
+	    
+	    
+	    <br> 
+	
+	</header>
+	
+	
+ <aside class="col-md-2">
+            <nav  id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked hidden-sm" data-spy="affix" data-offset-top="205" style="font-size: 1em !important; padding: 1px 1px 1px 20px">
+                    <li><a href="#sec1">Monomer design</a></li>
+                    <li><a href="#sec2">Connection 1</a></li>
+                    <li>
+                        <a href="#sec3" class="nav-link pl-0">Three</a>
+                        <ul class="nav flex-md-column ml-2 hidden-sm-down">
+                            <li class="nav-item"><a href="#sec3a" class="nav-link">Section A</a></li>
+                            <li class="nav-item"><a href="#sec3b" class="nav-link">Section B</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#sec4" class="nav-link pl-0">Four</a></li>
+                    <li><a href="#sec5" class="nav-link pl-0">Five</a></li>
+                    <li><a href="#sec6" class="nav-link pl-0">Six</a></li><br>
+					<p style="padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
+                </ul>
+	 </nav>
+        </aside>
+        
+        
+	<div class="container col-md-8 jumbotron">
+  <h2 class="page-header" id="sec1">Monomer design</h2>
+  <p>We decided to use the 2D triangle design that has been previously proposed by Rothemund and utilizes the m13mp18 viral ssDNA scaffold. We decided to use this design as this design have been used for other purposes and that this design is rather stable and easy to fold. The design itself is a flat equilateral triangle, however we had to make changes due to funding by tuning down the length of the sides to around 203 bp or 68.5nm in length (refer to fig 1a.). Nevertheless, there is a possibility where the excess scaffold might block and interrupt the process of forming polymers. Furthermore, the triangle has 3 sides of equal length that can help in forming polymers. Finally, modifications for connections can also be attempted by modifying the strands at the sides of the triangles while modifications to add function can be attempted by modifying the staple strands in the center part of the triangle. </p>
+  
+  
+  <figure>
+	  
+	  <img class="img-responsive center-block" src="design/monomer.png" width="70%" height="auto" alt=""/>
+	 
+	
+	  <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 1.1. The designed triangle monomer.</figcaption>
+	  </figure>
+  <br>
+  <a href="design/monomercadnano.json"><button type="button" class="btn btn-primary">caDNAno .json file</button></a>
+	   <a href="design/monomerstaple.xlsx"><button type="button" class="btn btn-secondary" >sequence spreadsheet</button></a>
+  <br><br>
+  
+  
+  <h2 class="page-header" id="sec2">Connection design 1 - through strand replacement</h2>
+  <p>At first, we were looking at a strong but not necessarily the most feasible connection. Therefore, we came up with an idea to replace some staple strands at one side of the monomer with a longer and more thermodynamically stable staple strands. After annealing the previous staple strands, temperature will be raised up and the longer strand will have two binding positions in 2 monomers and connect them as seen in fig 1.2. This design has a flaw however in which the longer staples might just end up replacing the shorter staples while binding to two sites of a single monomer. The efficiency of connection was observed to be really low and that is why we thought of different mechanisms. The design can be seen more clearly in fig 1.2-1.4.</p>
+  
+  <figure>
+  	<img class="img-responsive center-block" src="design/design2/dimerhighlight.png" width="70%" height="auto" alt=""/>
+  				<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 1.2. The positions where the staples to replace are located.</figcaption>
+  </figure>
+  <figure>
+  	  	<img class="img-responsive center-block" src="design/design2/dimerconnected.png" width="70%" height="auto" alt=""/>
+				<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 1.3. The planned replacement of the staples.</figcaption>
+  </figure>
+  <figure>
+  	  	  	<img class="img-responsive center-block" src="design/design2/dimerconnection.png" width="60%" height="auto" alt=""/>
+				<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 1.4. Detailed view of the connection, spacers are put in the staple to prevent the two monomers from getting to close to each other.</figcaption>
+  </figure>
+  
+  <p>The caDNAno file for the monomers are the same. Only additional strands were added to replace some of the original staple strands.</p>
+  	   <a href="design/replacementstrand.xlsx"><button type="button" class="btn btn-secondary" >sequence spreadsheet</button></a>
+  	   
+  	   <br>
+  	   <h2 class="page-header" id="sec2">Connection Design 2 – through complementary protruding strands</h2>
+  <p>As the first connection design proved to be ineffective, we thought of another way to connect the monomers. This connection design involves protruding staples that are complementary to each other. The annealing process to fold the monomers have to be performed separately to create 2 similar monomers only distinct at the side where the staples are modified.  </p>
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+	
+	
+</body>
+</html>    
+
