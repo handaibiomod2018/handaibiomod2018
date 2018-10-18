@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="icon.png" >
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,75 +16,160 @@
         margin: 100px;
     }
 	.affix {
-      top: 230px;
+      top: 275px;
       z-index: 9999 !important;
-  }
+    }
+    h2 {font-weight:bold;
+    }
 </style>
 	
 </head> 
+
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
 <header class="bs-docs-nav navbar-static-top" id="top"> 
+  
   <div class="container"> <div class="navbar-header"> <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="index.html" class="navbar-brand">DNA swarm robots by team Handai</a> </div>  
   <ul class="nav navbar-nav">
 	  <li class="active"> <a href="design2.html">Design</a></li>
 	  <li> <a href="experiment.html">Experiment</a> </li>
-		<li> <a href="note.html">Lab note</a> </li>
 		<li> <a href="results.html">Results</a> </li>
 		<li> <a href="future.html">Future</a> </li>
 		<li> <a href="team.html">Team</a> </li>
+		<li> <a href="sponsors.html">Sponsors</a> </li>
+
 		  </ul> 
 		
 		
 		<ul class="nav navbar-nav navbar-right"> 
 		  <li><a href="contact.html" >Contact</a></li> 
-		   </ul>  </div> 
-	
+		   </ul>  </div>
+
 	<header>
 	<div class="bs-docs-header" id="content" tabindex="-1" style ="background-color: #2783E8;"> <div class="container-fluid" ><div class="row">
   <div class="col-xs-12 col-md-8 jumbotron"><h1 style="color: white; padding: 10px 10px 10px 20px">DNA Swarm robots by Team Handai 
   
   </h1>
   
-  <p style="color:white; font-size:160%; padding-left: 20px">Swarm robotics is a new field of engineering in which robots are directed to synchronize through algorithm. In this research, DNA origami is utilized to create robots that can gather and have a specific function such as detection of a certain ligand. 2 types of robot will be attempted, activator and effector. By activating the activator through a certain ligand, pathways will be opened to let the effector attach to the activators and creating a swarm of robots at the ligand position. The extent of the feasibility in this experiment is to firstly produce a robot that can firstly aggregate through strand replacement mechanism before proceeding to use other mechanism such as aptamers to enable detection of ligand in the environment.</p></div>
+  <p style="color:white; font-size:160%; padding-left: 20px">Self-organizing swarm robots communicate each other to perform tasks as a group. Here
+we made nano-meter scale swarm robots using DNA origami, forming network between
+individual robots. Upon environmental signal recognition (e.g. protein), individual robots
+activate the connection module and form multimer complex. Our nano-meter scale swarm
+robots may be applicable into therapeutics where the robots autonomously detect the
+wound location and can cover the wound, providing medicines through programmable
+manner.</p></div>
+ 
+
   <div class="col-md-4 col-xs-12"><img  src="index/1.png" class="img-responsive center-block" alt=""/></div>
-		</div></div></div>
+    </div></div></div>
 	    
 	    
 	    <br> 
 	
 	</header>
 	
-	
- <aside class="col-md-2">
+<!-- This is the button -->
+
+  
+    <div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+                            <button data-toggle="collapse" style="position: absolute; z-index: 1;" href="#collapseExample" role="button" aria-expanded="false"   class="btn btn-info">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Menu</span>
+                            </button>
+    </div> 
+
+
+<!-- This is the mobile menu -->
+
+
+  <div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+
+              <ul id="collapseExample" class="nav nav-pills nav-stacked collapse"  style="; z-index: -1;font-size: 1em !important; padding: 5% 5% 10% 20px">
+                   
+                   
+                    <li ><a href="#sec1">Idea</a></li>
+                    <li ><a href="#sec2">Potential applications</a></li>
+                    <li ><a href="#sec3">Flow of idea and goals</a></li>
+                    <li><a href="#sec4">Short video</a></li>
+                    <br>
+          <p  style="padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
+                  
+                </ul>
+
+  </div>
+
+<!-- This is the pc menu -->
+  
+ <aside class="hidden-xs hidden-sm col-md-2" id="navbarCollapse" >
+          <div id="demo">
+           
             <nav  id="myScrollspy">
-                <ul class="nav nav-pills nav-stacked hidden-sm" data-spy="affix" data-offset-top="205" style="font-size: 0.8em !important; padding: 1px 1px 1px 20px">
-                    <li><a href="#sec1">Idea</a></li>
-                    <li><a href="#sec2">Project Goal and steps</a></li>
-                    <li>
-                        <a href="#sec3" class="nav-link pl-0">Three</a>
-                        <ul class="nav flex-md-column ml-2 hidden-sm-down">
-                            <li class="nav-item"><a href="#sec3a" class="nav-link">Section A</a></li>
-                            <li class="nav-item"><a href="#sec3b" class="nav-link">Section B</a></li>
-                        </ul>
-                    </li><br>
-					<p style="padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
+               
+
+                <ul class="nav nav-pills nav-stacked"  role="navigation" data-spy="affix" data-offset-top="205" style=" z-index: -1;font-size: 1em !important; padding: 1px 1px 1px 20px">
+                    <li ><a href="#sec1">Idea</a></li>
+                    <li ><a href="#sec2">Potential applications</a></li>
+                    <li ><a href="#sec3">Flow of idea and goals</a></li>
+                    <li><a href="#sec4">Short video</a></li>
+                    <br>
+					<p  style="padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
                     
                 </ul>
 	 </nav>
+       </div>
         </aside>
         
         
-	<div class="container col-md-8 jumbotron">
-  <h1 class="page-header" id="sec1">The idea in a nutshell</h1>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div class="container col-md-8 jumbotron" style="z-index: -1;">
+		<h2 style="font-size:280%" class="page-header" id="sec1">Idea</h2>
+	  		<p>
+	  			In this project, we took the idea of swarm nanorobots and try to translate it to nanoscale through the use of DNA origami. DNA origami has been one of the materials used in developing nanostructures due to the ease of manipulation and the ability of self-folding. </p>
+	  		<p>
+				In principle, the concept is similar to DNA tiles in which the assembly of polymer gets achieved through basic interactions and not top-down assembly of individual structures. However, this project tries to combine different disciplines by integrating conformation switching aptamers and possibly logic gates to control the actions of the nanorobots depending on the environment. 
+ 			</p>
   
+  		<h2 style="font-size:280%" class="page-header" id="sec2">Potential applications</h2>
+  			<p>
+  				This nanorobot has the potential to serve as diagnostic and therapeutic devices. If the experiments and designs succeed to amplify a ligand mediated activation to a visible signal, it means that it might be able to replace other methods of ligand detection. Furthermore, its application as a diagnostic device is not confined to only a type of ligand, but many different classes of ligands such as inorganic, organic molecules and proteins. In addition to that, one robot might be able to identify more than one ligand at a time and can possibly show different observation. 
+  			</p>
   
-  <h1 class="page-header" id="sec2">Project Goal and steps</h1>
+  		<h2 style="font-size:280%" class="page-header" id="sec3">Flow of idea and goals</h2>
+      <p>
+        The goals of this project are to establish important features that are needed to form a functioning swarm robotic system. The main goals are the first three below: to establish monomer design, connection design, and trigger mechanism and that function is a feature that we are looking for in the future as a supplement to the swarm robots.
+      </p>
+<br>
+
+                <figure class="text-center">
+                     <img class="center-block" src="index/flow.png"  height="auto" width="90%">
+                </figure >
+                <br><br>
+         
+
+
+  			<ol style="font-size:150%">
+  				<li>
+            <strong>Monomer design</strong>: Monomers act as individual nanorobots. The goal is to establish a simple, yet modifiable monomers that are stable. </li>
+  				<li>
+            <strong>Connection design</strong>: Connection was designed to create link between individual monomers. The goal is to design a connection mechanism that can connect monomers strongly. </li>
+  				<li>
+            <strong>Trigger mechanism</strong>: Mechanism needed to trigger the nanorobots on and off, to gather or to not gather. The goal is to have a mechanism that is reversible and responds to external stimuli such as proteins.</li>
+  				<li>
+            <strong>Modifications to add functions</strong>: In the future, we are looking at modifications to add function to the nanorobot network. This is out of this project's scope, however it is possible to attach structures such as channels that can control movement of substance in and out of target location.
+          </li>
+  			</ol>
+        <h2 style="font-size:280%" class="page-header" id="sec4">Short video</h2>
+
   
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
+
+
+
+
+  </div>
 	
+
 	
 </body>
+
+  <!-- Footer -->
+
 </html>    
 

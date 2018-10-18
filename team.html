@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="icon.png" >
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,11 +28,12 @@
   <ul class="nav navbar-nav">
 	  <li class="active"> <a href="design2.html">Design</a></li>
 	  <li> <a href="experiment.html">Experiment</a> </li>
-		<li> <a href="note.html">Lab note</a> </li>
 		<li> <a href="results.html">Results</a> </li>
 		<li> <a href="future.html">Future</a> </li>
 		<li style="background-color: #4096D0;"> <a style="color:white">Team</a> </li>
-		  </ul> 
+		<li> <a href="sponsors.html">Sponsors</a> </li>
+
+		</ul> 
 		
 		
 		<ul class="nav navbar-nav navbar-right"> 
@@ -51,9 +53,44 @@
 	    
 	
 	</header>
-	
-	
- <aside class="col-md-2">
+
+<!-- This is the button -->
+
+  
+    <div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+                            <button data-toggle="collapse" style="position: absolute; z-index: 1;" href="#collapseExample" role="button" aria-expanded="false"   class="btn btn-info">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Menu</span>
+                            </button>
+                        </div> 
+
+    <!-- This is the mobile menu -->
+
+
+<div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+
+<ul id="collapseExample" class="nav nav-pills nav-stacked collapse"  style="; z-index: -1;font-size: 1em !important; padding: 5% 5% 10% 20px">
+                   
+                   
+                    <li><a href="#sec1">Students</a></li>
+                    
+                    <li><a href="#sec2">Mentors</a></li><br>
+          <p style="font-size:50%; padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
+                    
+                </ul>
+
+
+
+
+
+
+</div>
+<!-- This is the pc menu -->
+
+
+ <aside class="hidden-xs hidden-sm col-md-2" id="navbarCollapse" >
+          <div id="demo">
+
             <nav  id="myScrollspy">
                 <ul class="nav nav-pills nav-stacked hidden-sm" data-spy="affix" data-offset-top="205" style="font-size: 2em !important; padding: 1px 1px 1px 40px">
                     <li><a href="#sec1">Students</a></li>
@@ -63,29 +100,35 @@
                     
                 </ul>
 	 </nav>
+  </div>
         </aside>
         
         
-	<div class="container col-md-8 jumbotron">
+	<div class="container col-md-8 jumbotron" style="z-index: -1;">
   <h1 class="page-header" id="sec1">Students</h1>
   <br><ul style="font-size: 200%">
   <li>Sota Watanabe</li>
   <p>Affiliation: School of Medicine, Junior</p>
-  <br>
-  <li>Tomoya Horibe</li>
-  <p>Affiliation: School of Medicine, Junior</p>
-  <br>
+  <p>Role: Leader</p>
+    <br>
   <li>Johannes Nicolaus Wibisana</li>
   <p>Affiliation: School of Science, Department of Biological Sciences, Junior</p>
+  <p>Role: Design, Wiki, Presentation</p>
   <br>
   <li>Shota Nakano</li>
   <p>Affiliation: School of Engineering Science, Freshman</p>
+  <p>Role: Experiments</p>
   <br>
   <li>Haruto Ijiri</li>
   <p>Affiliation: School of Science, Department of Biological Sciences, Freshman</p>
+  <p>Role: Experiments</p>
   <br>
   <li>Iori Senda</li>
   <p>Affiliation: School of Engineering Science, Freshman</p>
+  <p>Role: -</p>
+  <br>
+  
+
   </ul>
   <br>
   <br>

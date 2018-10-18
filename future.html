@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="icon.png" >
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,10 +28,11 @@
   <ul class="nav navbar-nav">
 	  <li class="active"> <a href="design2.html">Design</a></li>
 	  <li> <a href="experiment.html">Experiment</a> </li>
-		<li> <a href="note.html">Lab note</a> </li>
 		<li> <a href="results.html">Results</a> </li>
 		<li style="background-color: #4096D0;"> <a style="color:white">Future</a> </li>
 		<li> <a href="team.html">Team</a> </li>
+		<li> <a href="sponsors.html">Sponsors</a> </li>
+
 		  </ul> 
 		
 		
@@ -50,10 +52,39 @@
 	    
 	    <br> 
 	
-	</header>
+<!-- This is the button -->
+
 	
+    <div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+                            <button data-toggle="collapse" style="position: absolute; z-index: 1;" href="#collapseExample" role="button" aria-expanded="false"   class="btn btn-info">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Menu</span>
+                            </button>
+    </div> 
+
+<!-- This is the mobile menu -->
+
+
+<div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+
+<ul id="collapseExample" class="nav nav-pills nav-stacked collapse"  style="; z-index: -1;font-size: 1em !important; padding: 5% 5% 10% 20px">
+                   
+                   
+                    <li><a href="#sec1">Future</a></li>
+                    <li><a href="#sec2">ELSI</a></li>
+                    <br>
+					<p style="font-size:50%; padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
+                   
+                </ul>
 	
- <aside class="col-md-2">
+</div>
+
+<!-- This is the pc menu -->
+
+
+ <aside class="hidden-xs hidden-sm col-md-2" id="navbarCollapse" >
+            <div id="demo">
+
             <nav  id="myScrollspy">
                 <ul class="nav nav-pills nav-stacked hidden-sm" data-spy="affix" data-offset-top="205" style="font-size: 2em !important; padding: 1px 1px 1px 20px">
                     <li><a href="#sec1">Future</a></li>
@@ -62,21 +93,50 @@
 					<p style="font-size:50%; padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
                    
                 </ul>
-	 </nav>
+	          </nav>
+             </div>
         </aside>
         
         
-	<div class="container col-md-8 jumbotron">
+	<div class="container col-md-8 jumbotron" style="z-index: -1;">
   <h1 class="page-header" id="sec1">Future</h1>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  	<p>
+  	Firstly, we hope that the results that we have established might serve as foundation for future ideas in nano swarm robotics. 
+ 	</p>
+
+ 	<p>
+ 		In the future, in vivo experiments might be required to further assess the viability of these nanorobots as potential therapeutic devices. Similar to other DNA-based nanostructures, this system is prone to degradation by exo and endo-nucleases prevalent in blood (1). This degradation will hinder the ability of these nanostructures from being able to maintain its concentration in the target site. Therefore, further experiments are needed to determine structures more suitable for in-vivo studies: such as having a more compact structure (1), modifying the nucleotides to create synthetic nucleotides capable of evading nucleases (2), or other chemical modifications such as polyethyleneglycol (PEG) (3) that can improve in vivo half-life of these nanostructures. Nevertheless, this should also be balanced as modifications concerning artificial nucleotides for example, might give rise to unwanted toxicity effects (3). 
+ 	</p> 
+
+ 	<p>
+ 		Furthermore, the function of this nano swarm robots is not only restrained to therapeutics devices used for maintenance of drug delivery, other potential applications might also arise. For example, it can be used as a diagnostic device that can relay info depending on the substances that are present on the environment by programming the robots to elicit different responses upon ligand binding.  
+ 	</p>
+
+
   
   
   <h1 class="page-header" id="sec2">ELSI</h1>
   <p>As with every technological innovation, there are bound to be issues regarding ethical, legal, and social implications that should be addressed.
-   According to MEIT, our project comes under '1. Creating DNA devices and SB' in the report about the law of synthethic biology. Our project dosen't come under any concerns of this article, but we should think about other concerns. During the process of creating the DNA structures, buffers and different kinds of reagents were used. Some of the buffer solutions might have leaked into the drainage system, these wastes might potentially be harmful to the environment. Not only that, the structure might be modified to contain several modifications that might have dangers and thus waste management should be considered. 
-   In the process of making, the folding of DNA is not always perfect 100% of the time, this faulty in DNA folding might give rise to completely different structures. These faulty structures, might possibly have unexpected features that end up being harmful to other objects in the environment.</p>
+     In the process of making, the folding of DNA is not always perfect 100% of the time, this faulty in DNA folding might give rise to completely different structures. These faulty structures, might possibly have unexpected features that end up being harmful to other objects in the environment.</p>
   
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+   <h2 class="page-header"> References</h2>
+
+   <ol>
+        <li>
+			Kumar,V., Palazzolo,S., Bayda,S., Corona,G., Toffoli,G. and Rizzolio,F. (2016) DNA Nanotechnology for Cancer Therapeutics. Theranostics, 6, 710–725.          </li>
+        <li>
+			Conway,J.W., McLaughlin,C.K., Castor,K.J. and Sleiman,H. (2013) DNA nanostructure serum stability: greater than the sum of its parts. Chem. Commun., 49, 1172.          </li>
+        <li>
+			Zhou,J. and Rossi,J. (2017) Aptamers as targeted therapeutics: current potential and challenges. Nat. Rev. Drug Discov., 16, 181–202.         
+		</li>
+
+         
+
+      </ol>
+
+
 </div>
 	
 	

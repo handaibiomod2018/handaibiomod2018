@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="icon.png" >
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,11 +28,12 @@
   <ul class="nav navbar-nav">
 	  <li class="active"> <a href="design2.html">Design</a></li>
 	<li style="background-color: #4096D0;"> <a style="color:white">Experiment</a> </li>
-		<li> <a href="note.html">Lab note</a> </li>
 		<li> <a href="results.html">Results</a> </li>
 		<li> <a href="future.html">Future</a> </li>
 		<li> <a href="team.html">Team</a> </li>
-		  </ul> 
+		<li> <a href="sponsors.html">Sponsors</a> </li>
+
+		</ul> 
 		
 		
 		<ul class="nav navbar-nav navbar-right"> 
@@ -44,7 +46,7 @@
     <h1 style="color: white; padding: 10px 10px 10px 20px">Experiment</h1>
     <p style="color:white; font-size:160%; padding-left: 20px">In general, the experiments involves deciding annealing condition and mostly observation. Firstly, the appropriate annealing condition concerning temperature, buffer composition, and time was determined. Then, gel electrophoresis was performed to approximate if the structure has annealed or not and finally atomic force microscopy (AFM) was used to analyze the structures. Finally, additional procedures were also performed for additional mechanisms implemented in the structure. </p>
   </div>
-  <div class="col-md-4 col-xs-12"><img  src="index/1.png" class="img-responsive center-block" alt=""/></div>
+  <div class="col-md-4 col-xs-12"><div class="text-center"><img  src="experiment/exphome1.png" style="width:auto; height:400px" class="" alt=""/></div></div>
 		</div></div></div>
 	    
 	    
@@ -52,10 +54,62 @@
 	
 	</header>
 	
+<!-- This is the button -->
+
+  
+    <div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+                            <button data-toggle="collapse" style="position: absolute; z-index: 1;" href="#collapseExample" role="button" aria-expanded="false"   class="btn btn-info">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Open Menu</span>
+                            </button>
+    </div> 
+<!-- This is the mobile menu -->
+
+
+<div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+
+<ul id="collapseExample" class="nav nav-pills nav-stacked collapse"  style="; z-index: -1;font-size: 1em !important; padding: 5% 5% 10% 20px">
+                   
+                   
+                    <li class="dropdown">
+                 <a class="dropdown-toggle" data-toggle="dropdown" href="sec1">Annealing<span class="caret"></span></a>
+                  <ul class="dropdown-menu" style="font-size:100%">
+                   <li><a href="#sec1-1">Reagents</a></li>
+                   <li><a href="#sec1-2">Procedure</a></li>                     
+                 </ul>
+              </li>
+                 
+                    <li class="dropdown">
+                 <a class="dropdown-toggle" data-toggle="dropdown" href="sec2">Gel electrophoresis<span class="caret"></span></a>
+                  <ul class="dropdown-menu" style="font-size:100%">
+                   <li><a href="#sec2-1">Reagents</a></li>
+                   <li><a href="#sec2-2">Procedure</a></li>                     
+                 </ul>
+              </li>
+                      
+                    <li class="dropdown">
+                 <a class="dropdown-toggle" data-toggle="dropdown" href="sec3">AFM<span class="caret"></span></a>
+                  <ul class="dropdown-menu" style="font-size:100%">
+                   <li><a href="#sec3-1">Reagents</a></li>
+                   <li><a href="#sec3-2">Procedure</a></li>                     
+                 </ul>
+              </li>
+                         
+                       
+                    </li>
+                    <br>
+                    
+          <p style="padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
+                  
+                </ul>
+
+</div>
 	
  <aside class="col-md-2">
+         <div id="demo">
+
             <nav  id="myScrollspy">
-                <ul class="nav nav-pills nav-stacked hidden-sm" data-spy="affix" data-offset-top="205" style="font-size: 0.8em !important; padding: 1px 1px 1px 20px">
+                <ul class="nav nav-pills nav-stacked hidden-sm" data-spy="affix" data-offset-top="205" style="font-size: 1em !important; padding: 1px 1px 1px 20px">
                     <li class="dropdown">
          				 <a class="dropdown-toggle" data-toggle="dropdown" href="sec1">Annealing<span class="caret"></span></a>
         				  <ul class="dropdown-menu" style="font-size:100%">
@@ -73,40 +127,228 @@
         			</li>
                       
                     <li class="dropdown">
-         				 <a class="dropdown-toggle" data-toggle="dropdown" href="sec2">AFM<span class="caret"></span></a>
+         				 <a class="dropdown-toggle" data-toggle="dropdown" href="sec3">AFM<span class="caret"></span></a>
         				  <ul class="dropdown-menu" style="font-size:100%">
-    			       	 <li><a href="#sec2-1">Reagents</a></li>
-     			      	 <li><a href="#sec2-2">Procedure</a></li>                     
+    			       	 <li><a href="#sec3-1">Reagents</a></li>
+     			      	 <li><a href="#sec3-2">Procedure</a></li>                     
        				   </ul>
         			</li>
                          
                        
                     </li>
-                    <li><a href="#sec4" class="nav-link pl-0">Four</a></li>
-                    <li><a href="#sec5" class="nav-link pl-0">Five</a></li>
-                    <li><a href="#sec6" class="nav-link pl-0">Six</a></li><br>
+                    <br>
+                    
 					<p style="padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
                 </ul>
 	 </nav>
+  </div>
         </aside>
         
         
-	<div class="container col-md-8 jumbotron">
+	<div class="container col-md-8 jumbotron" style="z-index: -1;">
 	  <h2 class="page-header" id="sec1">Determination of optimal annealing condition</h2>
 		<div  class=well>
 			<h3 id="sec1-1"><strong>Reagents</strong></h3>
-			<p>aa bb cc dd</p>
+			
+<table class="table table-responsive table-hover" style="width:50%">
+     <h3><strong>Gel</strong></h3>
+
+   <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Reagents</th>
+      <th scope="col">Volume (µl)</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Staple mix</td>
+      <td>26</td>
+     
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>M13MP18 Scaffold</td>
+      <td>52</td>
+    
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Purified water</td>
+      <td>39</td>
+   
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>10X buffer (refer to next table)</td>
+      <td>13</td>
+   
+    </tr>
+<table class="table table-responsive table-hover" style="width:50%">
+     <h3><strong>10X Buffer</strong></h3>
+
+   <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Reagents</th>
+      <th scope="col">Volume (µl)</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>1M Tris</td>
+      <td>25</td>
+     
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>0.5M EDTA</td>
+      <td>10</td>
+    
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>2.5M NaCl</td>
+      <td>10</td>
+   
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>2.5M MgCl2</td>
+      <td>20</td>
+   
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Purified water</td>
+      <td>435</td>
+   
+    </tr>
+    
+          
+  </tbody>
+</table>
+
 			<br>
 			<h3 id="sec1-2"><strong>Procedures</strong></h3>
 		</div>
-	  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  
-  
-  <h1 class="page-header" id="sec2">Gel electrophoresis</h1>
-  
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	  <br>
+	  <h2 class="page-header" id="sec2">Gel electrophoresis</h2>
+<p>Gel electrophoresis was performed after every annealing process and before observing through AFM. Gel electrophoresis itself involves flowing the annealed DNA materials through an electric field in gel. As DNA has a phosphate group that is negatively charged, the DNA origami will flow through the gel from the negative electrode to the positive electrode. In the process, smaller pieces will be able to flow through the gel quicker than bigger pieces or possibly the pieces have properly folded.</p>
+<div  class=well>
+  <h3 id="sec2-1" class="page-header"><strong>Reagents</strong></h3>
+  <table class="table table-responsive table-hover" style="width:50%">
+     <h3><strong>Gel</strong></h3>
+
+   <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Reagents</th>
+      <th scope="col">Volume/Mass</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>10X TBE</td>
+      <td>2.5 ml</td>
+     
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>1M MgCl2</td>
+      <td>0.65 ml</td>
+    
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Agarose</td>
+      <td>0.5 mg</td>
+   
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Purified water</td>
+      <td>46.85 ml</td>
+   
+    </tr>
+<table class="table table-responsive table-hover" style="width:50%">
+     <h3><strong>Buffer</strong></h3>
+
+   <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Reagents</th>
+      <th scope="col">Volume/Mass</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>10X TBE</td>
+      <td>2.5 ml</td>
+     
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>1M MgCl2</td>
+      <td>1 ml</td>
+    
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Purified water</td>
+      <td>46.5 ml</td>
+   
+    </tr>
+    
+          
+  </tbody>
+</table>
+			
+			
+			
+			<br>
+<h3 id="sec2-1" class="page-header"><strong>Procedures</strong></h3>
+		<ol style="font-size:130%">
+			<p><strong>Gel preparation</strong></p>
+			<li>Mix all the reagents together into a 100 ml conical flask.</li>
+			<li>Heat the reagents in microwave until it boils.</li>
+			<li>Cool the hot mixture in the refrigerator for about 15 minutes.</li>
+			<li>After 15 minutes, the gel mixture was poured into the gel board. Combs were also inserted to create wells.</li>
+			<li> The cooled gel was then put in the electrophoresis chamber along with sufficient amount of buffer solution.</li>
+			<br>
+			<p><strong>Sample preparation</strong></p>
+			<li>transfer 5 µl of the annealed DNA origami from the annealing tube to a pcr tube.</li>
+			<li>3 µl of Rod LD (staining agent) was then added to each tube to form a total 8 µl of solution.</li>
+			<li>10 µl of marker was also transferred to one of the wells for comparison.</li>
+			<p><strong>Running the gel</strong></p>
+			<li>After setting up the samples, the electrophoresis was set to run at 100 volts for 1 hour</li>
+			<li>The finished gel was then transferred with another container containing the buffer and 4 µl of SYBR safe (intercalating agent) was pipetted onto the gel. </li>
+			<li>The gel was shaken on a shaker machine slowly for around 10 minutes.</li>
+			<li>Image of the gel was finally taken using gel photo machine.</li>
+			</ol>
+	  
+	  
 </div>
 	
+<h2 class="page-header" id="sec2">Purification of annealed sample</h2>
+<p>
+  Upon confirming the annealing results using electrophoresis, the results were firstly purified using column in the centrifuge before incubation for hybridization reactions and before AFM observation. This step was performed to prevent the aggregation of excess materials that might interfere in hybridization experiments and also to prevent the excess materials from interfering and causing irrelevant noise during AFM observation.
+</p>
+<div  class=well>
+  <h3 id="sec2-1" class="page-header"><strong>Materials</strong></h3>
+  <ol>
+    <li>Illustra MicroSpin column S-300</li> 
+    <li>Annealed sample</li>
+  </ol>
+</div>  
 	
 </body>
 </html>    

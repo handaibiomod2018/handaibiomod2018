@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="icon.png" >
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +18,10 @@
 	.affix {
       top: 230px;
       z-index: 9999 !important;
-  }
+    }
+    h2 {font-weight:bold;
+    }
+  
 </style>
 	
 </head> 
@@ -25,12 +29,13 @@
 <header class="bs-docs-nav navbar-static-top" id="top"> 
   <div class="container"> <div class="navbar-header"> <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="index.html" class="navbar-brand">DNA swarm robots by team Handai</a> </div>  
   <ul class="nav navbar-nav">
-	  <li class="active"> <a href="design.html">Design</a></li>
+	  <li class="active"> <a href="design2.html">Design</a></li>
 	  <li> <a href="experiment.html">Experiment</a> </li>
-		<li> <a href="note.html">Lab note</a> </li>
 		<li style="background-color: #4096D0;"> <a style="color:white">Results</a> </li>
 		<li> <a href="future.html">Future</a> </li>
 		<li> <a href="team.html">Team</a> </li>
+		<li> <a href="sponsors.html">Sponsors</a> </li>
+		
 		  </ul> 
 		
 		
@@ -42,45 +47,541 @@
 	<div class="bs-docs-header" id="content" tabindex="-1" style ="background-color: #2783E8;"> <div class="container-fluid" ><div class="row">
   <div class="col-xs-12 col-md-8 jumbotron">
     <h1 style="color: white; padding: 10px 10px 10px 20px">Results</h1>
-    <p style="color:white; font-size:160%; padding-left: 20px">In this section, the results and the discussions of the experiments will be discussed. </p>
+    <p style="color:white; font-size:160%; padding-left: 20px">In this section, the results and discussions of the experiments will be elaborated </p>
   </div>
-  <div class="col-md-4 col-xs-12"><img  src="index/1.png" class="img-responsive center-block" alt=""/></div>
+
+  <div class="col-md-4 col-xs-12"><div class="text-center"><img src="experiment/afm/monomer2.png" class="" alt=""/></div></div>
+
+
+
+
 		</div></div></div>
 	    
 	    
 	    <br> 
 	
 	</header>
+
+<!-- This is the button -->
+
+    
+    <div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+                            <button data-toggle="collapse" style="position: absolute; z-index: 1;" href="#collapseExample" role="button" aria-expanded="false"   class="btn btn-info">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Open Menu</span>
+                            </button>
+    </div> 
 	
-	
- <aside class="col-md-2">
-            <nav  id="myScrollspy">
-                <ul class="nav nav-pills nav-stacked hidden-sm" data-spy="affix" data-offset-top="205" style="font-size: 0.8em !important; padding: 1px 1px 1px 20px">
-                    <li><a href="#sec1">Idea</a></li>
-                    <li><a href="#sec2">Project Goal and steps</a></li>
-                    <li>
-                        <a href="#sec3" class="nav-link pl-0">Three</a>
-                        <ul class="nav flex-md-column ml-2 hidden-sm-down">
-                            <li class="nav-item"><a href="#sec3a" class="nav-link">Section A</a></li>
-                            <li class="nav-item"><a href="#sec3b" class="nav-link">Section B</a></li>
-                        </ul>
+
+<!-- This is the mobile menu -->
+
+
+<div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+
+<ul id="collapseExample" class="nav nav-pills nav-stacked collapse"  style="; z-index: -1;font-size: 1em !important; padding: 5% 5% 10% 20px">
+                   
+                   
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="sec1">Annealing of monomer<span class="caret"></span></a>
+                          <ul class="dropdown-menu" style="font-size:100%">
+                         <li><a href="#sec1">Deciding MgCl2 concentration</a></li>
+                         <li><a href="#sec1-2">AFM</a></li> 
+                         <li><a href="#sec1-3">Conclusion</a></li>                  
+                 
+                       </ul>
                     </li>
-                    <li><a href="#sec4" class="nav-link pl-0">Four</a></li>
-                    <li><a href="#sec5" class="nav-link pl-0">Five</a></li>
-                    <li><a href="#sec6" class="nav-link pl-0">Six</a></li><br>
+
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="sec2">First connection<span class="caret"></span></a>
+                          <ul class="dropdown-menu" style="font-size:100%">
+                        <li>
+                            <a href="#sec2">Incubation temperature</a>
+                        </li>
+                        <li>
+                            <a href="#sec2-1">Adjustment of bridge concentration</a>
+                        </li>
+                        <li>
+                            <a href="#sec2-2">Monomer annealing adjustment</a>
+                        </li> 
+                        <li>
+                            <a href="#sec2-3">Final incubation temperature adjustment</a>
+                        </li>
+                        <li>
+                            <a href="#sec2-4">AFM</a>
+                        </li>
+                        <li>
+                            <a href="#sec2-4">Conclusion</a>
+                        </li>                        
+                       </ul>
+
+                    </li>
+
+
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="sec3">Second connection<span class="caret"></span></a>
+                          <ul class="dropdown-menu" style="font-size:100%">
+                        <li>
+                            <a href="#sec3">3T spacer</a>
+                        </li>
+                        <li>
+                            <a href="#sec3-1">8T spacer</a>
+                        </li>
+                        <li>
+                            <a href="#sec3-2">AFM</a>
+                        </li> 
+                        <li>
+                            <a href="#sec3-3">Conclusion</a>
+                        </li>                       
+                       </ul>
+                    </li>
+
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="sec4">Third connection<span class="caret"></span></a>
+                          <ul class="dropdown-menu" style="font-size:100%">
+                        <li>
+                            <a href="#sec4">Annealing</a>
+                        </li>
+                        <li>
+                            <a href="#sec4-1">AFM</a>
+                        </li>
+                        <li>
+                            <a href="#sec4-2">Conclusion</a>
+                        </li>                        
+                       </ul>
+                    </li>
+
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="sec5">Trigger mechanism<span class="caret"></span></a>
+                          <ul class="dropdown-menu" style="font-size:100%">
+                        <li>
+                            <a href="#sec5">Annealing</a>
+                        </li>
+                        <li>
+                            <a href="#sec5-1">AFM</a>
+                        </li>
+                        <li>
+                            <a href="#sec5-2">Conclusion</a>
+                        </li>                        
+                       </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="#sec6">Discussions</a>
+                    </li>
+                    <br>
+
+
+                    <p style="padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
+                </ul>
+
+</div>
+  
+
+
+	
+<aside class="hidden-xs hidden-sm col-md-2" id="navbarCollapse" >
+            <div id="demo">
+
+            <nav  id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked hidden-sm" data-spy="affix" data-offset-top="205" style="font-size: 1em !important; padding: 1px 1px 1px 20px">
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="sec1">Annealing of monomer<span class="caret"></span></a>
+                          <ul class="dropdown-menu" style="font-size:100%">
+                         <li><a href="#sec1">Deciding MgCl2 concentration</a></li>
+                         <li><a href="#sec1-2">AFM</a></li> 
+                         <li><a href="#sec1-3">Conclusion</a></li>                  
+                 
+                       </ul>
+                    </li>
+
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="sec2">First connection<span class="caret"></span></a>
+                          <ul class="dropdown-menu" style="font-size:100%">
+                        <li>
+                            <a href="#sec2">Incubation temperature</a>
+                        </li>
+                        <li>
+                            <a href="#sec2-1">Adjustment of bridge concentration</a>
+                        </li>
+                        <li>
+                            <a href="#sec2-2">Monomer annealing adjustment</a>
+                        </li> 
+                        <li>
+                            <a href="#sec2-3">Final incubation temperature adjustment</a>
+                        </li>
+                        <li>
+                            <a href="#sec2-4">AFM</a>
+                        </li>
+                        <li>
+                            <a href="#sec2-4">Conclusion</a>
+                        </li>                        
+                       </ul>
+
+                    </li>
+
+
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="sec3">Second connection<span class="caret"></span></a>
+                          <ul class="dropdown-menu" style="font-size:100%">
+                        <li>
+                            <a href="#sec3">3T spacer</a>
+                        </li>
+                        <li>
+                            <a href="#sec3-1">8T spacer</a>
+                        </li>
+                        <li>
+                            <a href="#sec3-2">AFM</a>
+                        </li> 
+                        <li>
+                            <a href="#sec3-3">Conclusion</a>
+                        </li>                       
+                       </ul>
+                    </li>
+
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="sec4">Third connection<span class="caret"></span></a>
+                          <ul class="dropdown-menu" style="font-size:100%">
+                        <li>
+                            <a href="#sec4">Annealing</a>
+                        </li>
+                        <li>
+                            <a href="#sec4-1">AFM</a>
+                        </li>
+                        <li>
+                            <a href="#sec4-2">Conclusion</a>
+                        </li>                        
+                       </ul>
+                    </li>
+
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="sec5">Trigger mechanism<span class="caret"></span></a>
+                          <ul class="dropdown-menu" style="font-size:100%">
+                        <li>
+                            <a href="#sec5">Annealing</a>
+                        </li>
+                        <li>
+                            <a href="#sec5-1">AFM</a>
+                        </li>
+                        <li>
+                            <a href="#sec5-2">Conclusion</a>
+                        </li>                        
+                       </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="#sec6">Discussions</a>
+                    </li>
+                    <br>
+
+
 					<p style="padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
                 </ul>
 	 </nav>
+    </div>
         </aside>
         
         
-	<div class="container col-md-8 jumbotron">
-	  <h2 class="page-header" id="sec1">Creation of monomer</h2>
-	  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="container col-md-8 jumbotron" style="z-index: -1;">
+
+
+	<h2 style="" class="page-header" id="sec1">Annealing of monomer</h2>
+	       <p>The objective of this section is to decide the perfect condition for monomer annealing. There are different aspects to annealing the perfect monomer: MgCl2 concentration, temperature, and annealing time.</p>
+
+           <p></p>
+    <h2 class="page-header" id="sec1-1">Annealing of monomer - Deciding MgCl2 concentration</h2>
+            <p>For this part, it did not take a lot of trials to find the perfect annealing condition as the design is 2D and has been well documented. The temperature gradient used in annealing is as seen in fig 1.1 while the gel electrophoresis result of the different MgCl2 concentrations can be seen on fig 1.2.</p>
+<br>
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/annealingtemp1.png" width="50%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 1.1. Temperature gradient used in annealing. (not to scale)
+                    </figcaption>
+                </figure >
+
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/180812_02.png" width="60%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 1.2. Result of gel electrophoresis of annealing product. From left to right: M13MP18 scaffold, 20 mM, 15 mM, 12 mM, 10 mM, 8 mM, 5 mM, 0 mM MgCl2 concentration.
+                    </figcaption>
+                </figure >
+
+            <p>Alhough fig 1.2. did not show the differences between concentrations really well, intensity analysis using imageJ showed the most concentrated bands by density are the ones at 10 and 12 mM MgCl2 concentrations. The structure is an equivalent of about 5700 BP dsDNA, however it can be seen that the upper less darker band is at around 4 kb. This might have been influenced by the structure shape, which causes the flow through the gel to be different than predicted. Furthermore, the 2 bands in the lanes might also be caused by the monomers taking different conformations.</p>
+    <h2 class="page-header" id="sec1-2">
+        Annealing of monomer - AFM observation
+    </h2>
+            <p>
+                AFM observation showed that the annealing produced proper monomers as predicted as seen in fig 1.3a and 1.3b.
+            </p>
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/afm/monomer1.png" width="40%" height="auto" alt=""/>
+                    <img class="img-responsive center-block" src="experiment/afm/monomer2.png" width="40%" height="auto" alt=""/>
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 1.3a (left) and 1.3b (right) AFM taken for the monomers.
+                    </figcaption>
+                </figure >
+
+     <h2 class="page-header" id="sec1-3">
+        Annealing of monomer - Conclusion
+    </h2>
+            <p>
+                Even though gel electrophoresis result showed 2 bands that might mean that the monomers are taking different conformations that can influence the rate of flow through the agarose gel, AFM observation showed that the monomers are folded properly and that the conformations might be negligible.
+            </p>
+<!--AFTER THIS IS FIRST CONNECTION-->
+
+
+    <h2 class="page-header" id="sec2">First connection - Incubation temperature</h2>
+            <p>
+                After the completion of the annealing of the monomers, the bridge strands were added at a ratio of monomer:bridge 2:1. These strands were added, and the monomers were incubated at a certain constant temperature for 4 hours. Fig 2.1. and fig 2.2. show the results of annealing at MgCl2 concentration of 10 and 12 MgCl2 concentration respectively.
+            </p>
+    <br>
+
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/180813_01R.png" width="60%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 2.1. Result of gel electrophoresis after incubation for 4 hours. From left to right: Marker, 44.09 °C, 40.64 °C, 35.12 °C, 29.37 °C, 25.0 °C, 44.09 °C, 40.64 °C, 35.12 °C, 29.37 °C, 25.0 °C, marker. 
+                    </figcaption>
+                </figure >
+
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/180813_01L.png" width="60%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 2.2. Result of gel electrophoresis after incubation for 4 hours. From left to right: Marker, 44.09 °C, 40.64 °C, 35.12 °C, 29.37 °C, 25.0 °C, 44.09 °C, 40.64 °C, 35.12 °C, 29.37 °C, 25.0 °C, marker.  
+                    </figcaption>
+                </figure >
+
+            <p>
+                Unfortunately, after 4 hours of incubation, the bridge did not form connection between the monomers as there was not any band showing the formation of dimers referring to fig 2.1 and 2.2. 
+            </p>
   
-  
-  <h1 class="page-header" id="sec2">Project Goal and steps</h1>
-  
+    <h2 class="page-header" id="sec2-1">First connection - Bridge concentration adjustment</h2>
+            <p>
+                As the previous experiment failed to show the formation of dimers, concentration of the replacement strands or bridges were adjusted. Previously, the ratio of monomer:bridge was 2:1, now the ratio was changed to 2:1 and 1:5 and the gel electrophoresis results are shown in fig 3.1. and 3.2. respectively. 
+            </p>
+    <br>
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/180815_01L.png" width="60%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 3.1. Result of gel electrophoresis after incubation for 4 hours with ratio monomer:bridge 2:1. From left to right: Marker, 44.09 °C, 40.64 °C, 35.12 °C, 29.37 °C, 25.0 °C, 44.09 °C, 40.64 °C, 35.12 °C, 29.37 °C, 25.0 °C, marker.  
+                    </figcaption>
+                </figure >
+
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/180815_01R.png" width="60%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 3.2. Result of gel electrophoresis after incubation for 4 hours with ratio monomer:bridge 1:5. From left to right: Marker, 44.09 °C, 40.64 °C, 35.12 °C, 29.37 °C, 25.0 °C, 44.09 °C, 40.64 °C, 35.12 °C, 29.37 °C, 25.0 °C, marker.  
+                    </figcaption>
+                </figure >
+            <p>
+                The gel electrophoresis result showed that the dimers were not formed. 
+            </p>
+
+    <h2 class="page-header" id="sec2-2">First connection - Monomer annealing condition adjustment
+    </h2>
+            <p>
+                After changing the incubation condition and failing to form dimers. We tried changing the condition of annealing of the monomers in case that the monomers might not have annealed properly and leading to the failure of formation of dimers. Therefore, we changed the annealing temperature of the monomer as described in fig 4.1. The resulting gel electrophoresis is available on fig 4.2.
+            </p>
+<br>
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/annealingtemp2.png" width="60%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 4.1. The temperature gradient attempted for the retrial of monomer annealing. The value of X is adjustable and is described on fig 4.2.  
+                    </figcaption>
+                </figure>
+
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/180816_01.png" width="60%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 4.2. Result of gel electrophoresis of the monomers, the MgCl2 concentration was kept at 10mM. Left to right: marker, X= 55.81 °C, 51.56 °C, 49.69 °C, 47.48 °C, 45.61 °C, 40 °C, marker.
+                    </figcaption>
+                </figure>
+            <p>
+                The result did not change compared to annealing using the previous condition. Therefore, it can be concluded that the problem is not the annealing of the monomers. 
+            </p>
+
+
+    <h2 class="page-header" id="sec2-3">First connection - Final incubation temperature adjustment
+    </h2>
+
+            <p>As it was assumed that the monomers annealed properly, a final incubation incubation temperature change under different bridge concentrations was attempted. Results are as shown in fig 4.1.</p>
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/180816_02.png" width="60%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 4.1. Result of gel electrophoresis after incubation for 4 hours with ratio monomer:bridge 1:5. From left to right: Marker, 44.09 °C, 40.64 °C, 35.12 °C, 29.37 °C, 25.0 °C, 44.09 °C, 40.64 °C, 35.12 °C, 29.37 °C, 25.0 °C, marker.  
+                    </figcaption>
+                </figure >
+
+    <h2 class="page-header" id="sec2-4">First connection - AFM observation
+    </h2>
+
+            <p>AFM observation showed some monomers possibly forming dimers at a very low efficiency. Therefore, it can be concluded that the connection is unsufficient for this project. </p>
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/afm/connection1.png" width="40%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 4.1. One of the possible dimer found after observation, it is also possible that they just happen to be close to each other.  
+                    </figcaption>
+                </figure >
+    <h2 class="page-header" id="sec2-5">
+        First connection - Conclusion
+    </h2>
+            <p>After the different treatments, the connection did not appear to form. Therefore, it can be concluded that this connection design is not strong enough or that this connection design is not feasible to assist the swarming effect of the monomers.</p>
+
+            <br><br><br>
+
+<!--AFTER THIS IS SECOND CONNECTION-->
+    <h2 class="page-header" id="sec3">
+        Second connection - 3T spacer
+    </h2>
+            <p>
+                In this section, the 2 different monomers with complementary protruding strands will be named monomer An and Bn where n indicates the number of spacers. The annealing condition for this section uses the annealing condition previously decided. The first experiment utilizes the protruding strands with 3T spacers and the result of gel electrophoresis available on fig 5.1. 
+            </p>
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/180912_02.png" width="70%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 6.1. Result of gel electrophoresis after incubation for 4 hours at different temperatures with monomers ratio of 1:1. From left to right: Marker, M13MP18, B3, A3, A3B3 44.09°C, A3B3 40.64°C, A3B3 35.12°C, A3B3 29.37°C, A3B3 25°C, marker.  
+                    </figcaption>
+                </figure >
+            <p>
+                By comparing lanes 1 and 2 with lanes 3 to 7, the dimers might have formed as there are darker bands above the monomer bands shown by 1 and 2, however there are ambiguous multiple bands and AFM was needed to confirm the existence of dimers. 29.37°C incubation temperature seemed to be the most appropriate temperature for the joining of monomers.
+            </p>
+
+    <h2 class="page-header" id="sec3-1">
+        Second connection - 8T spacer
+    </h2>
+            <p>
+                After the experiment for 3T spacer, 8T spacer experiment was also performed. The annealing and incubation conditions are unchanged.   
+            </p>
+
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/180914_01.png" width="70%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 6.2. Result of gel electrophoresis after incubation for 4 hours at different temperatures with monomers ratio of 1:1. From left to right: Marker, M13MP18, B8, A8, A8B8 44.09°C, A8B8 40.64°C, A8B8 35.12°C, A8B8 29.37°C, A8B8 25°C, marker.  
+                    </figcaption>
+                </figure >
+
+    <h2 class="page-header" id="sec3-2">
+        Second connection - AFM observation
+    </h2>
+
+    <h2 class="page-header" id="sec3-3">
+        Second connection - Conclusion
+    </h2>
+            <p>
+                The result did not differ by that much compared to the previous one, therefore it can be concluded that the difference between 3T and 8T spacers are pretty much negligible. The AFM result however, was inconclusive.
+            </p>
+ <!--AFTER THIS IS THIRD CONNECTION-->
+           
+    <h2 class="page-header" id="sec4">
+        Third connection - Bridge mediated connection
+    </h2>
+
+            <p>
+                We also tested the other connection method by using bridge that connects the protruding strands. The monomers will be labeled as A and C. The ratio of the different monomers are 1:1 and the bridge will be 5-fold of the monomers. Fig 7.1b shows the results of the analysis done of the gel by measuring the area of the bands. The result shows an efficiency of around 37-48% in forming dimers and is significantly higher than the ones that are expected to only monomers. 
+            </p>
+
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/180927_1.png" width="60%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 7.1a. Result of gel electrophoresis after incubation for 4 hours at different temperatures. From left to right: Marker, A, C, A+C+bridge 35°C, A+C+bridge 29.4°C, A+C+bridge 25°C, marker.  
+                    </figcaption>
+
+                    <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/190927_1 bargraph.png" width="60%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 7.1b. Result of analysis of the gel, lanes from 1 to 5 denotes the lanes other than marker of fig 7.1a.  
+                    </figcaption>
+
+
+                </figure >
+
+    <h2 class="page-header" id="sec4-1">
+        Third connection - AFM observation
+    </h2>
+            <p>
+                The AFM result in fig 7.2a was selected as a representative of the succesful dimer. After taking observations of about 200 monomers through estimation, it was found that around half of the monomers have formed dimer which means that the efficiency of this connection was at around 46% as represented by a bar graph on fig 7.2b.
+            </p>
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/afm/connection3.png" width="40%" height="auto" alt=""/>
+
+                    <img class="img-responsive center-block" src="experiment/afm/connection3ratio.png" width="50%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 7.2a (left) and 7.2b (right) Result of AFM observation.  
+                    </figcaption>
+                </figure >
+    <h2 class="page-header" id="sec4-2">
+        Third connection - Conclusion
+    </h2>
+            <p>
+                The result of gel electrophoresis did not differ by that much compared to the previous result, 
+            </p>
+<!--AFTER THIS IS TRIGGER MECHANISM-->
+    <h2 class="page-header" id="sec5">
+        Trigger mechanism - Annealing
+    </h2>
+            <p>
+               The trigger mechanism was annealed based on the condition specified. As seen in fig 8.1, sheet with protruding strands showed a more pronounced larger band. This probably happened due to the strands affecting the flow of the sheets through the gel. By looking at lane 3 to 5, it was possible that the fasteners were not able to fasten the sheets and form a tube and thus means that more experiments might be needed to confirm the closing by fasteners.
+            </p>
+
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/181007_01.png" width="60%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 8.1 Result of gel electrophoresis upon annealing (lane 3 to 5 were the results after incubation for 4 hours at different temperatures). From left to right: Marker, sheet, sheet+protruding strands, sheet+fastener 25°C, sheet+fastener 29.4°C, sheet+fastener 35°C, marker
+                    </figcaption>
+                </figure >
+
+    <h2 class="page-header" id="sec5-1">
+        Trigger mechanism - AFM
+    </h2>
+
+            <p>
+                AFM observation as shown in fig 8.2a showed that the sheets have annealed properly to form rectangular sheets of proper size. Moreover, the protruding strands were also visible and rough ImageJ intensity analysis were done for 28 sample structures and that the result is shown in fig 8.2b. However, it can be seen that there were no structure possessing 6 strands as designed, this might have been caused as the protruding strands were not large enough and uniform enough to form a point that is detectable by AFM. The structures that were observed to have none protruding strands were possibly due to the orientation of the structures where the protruding strands face the other side.
+            </p>
+
+                <figure class="text-center">
+                    <img class="img-responsive center-block" src="experiment/afm/201810080016_Ch1 5 dots.png" width="40%" height="auto" alt=""/>
+
+                    <img class="img-responsive center-block" src="experiment/afm/sheetprotruding.png" width="40%" height="auto" alt=""/>
+                    
+                    <figcaption class="jumbotron" style="font-size:150%; text-align: center">
+                        Fig 8.2a (left) and 8.2b (right) Result of AFM observation. The number of visible protruding strands serves as an estimation.  
+                    </figcaption>
+                </figure >
+
+    <h2 class="page-header" id="sec5-1">
+        Trigger mechanism - Conclusion
+    </h2>
+    
+
+    <h2 class="page-header" id="sec6">
+        Overall conclusion and discussions
+    </h2>
+            <p>
+                Firstly, we have succeded in establishing the design of the monomer. The design of the monomer also has side staple strands that can be modified to make way for elongated staple strands that can eb used to make connections to polymerize the structures. The results as seen in figure . Nevertheless, more experiments with different monomer shapes might be required for different tasks. This means that we have completed our first goal which is to establish a functional monomer.
+            </p>
+            <p>
+                Moreover, we have established the connection needed to form dimers to a certain efficiency. Efficiency of the connections might be raised by using protruding strands that have a higher G-C content and also . The result of this section means that we have realized our next goal in establishing means of connection between the monomers. 
+            </p>
+
+            <p>
+                We have also succeeded in 
+            </p>
+            <p>
+                We have not, however combined the individual features and functionalize our structure to create a swarm nanorobot system capable of maintaining drug concentration at a certain target location.
+            </p>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
 	

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="icon.png" >
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DNA Swarm Robots by Team Handai</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+	body {position: relative;
+	}
+    .bs-example{
+        margin: 100px;
+    }
+	.affix {
+      top: 320px;
+      z-index: 9999 !important;
+    }
+    
+ 
+}
+</style>
+	
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+<header class="bs-docs-nav navbar-static-top" id="top"> 
+  
+  
+  <div class="container"> <div class="navbar-header"> <button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="index.html" class="navbar-brand">DNA swarm robots by team Handai</a> </div>  
+  <ul class="nav navbar-nav">
+		<li style="background-color: #4096D0;"> <a style="color:white">Design</a> </li>
+	  <li> <a href="experiment.html">Experiment</a> </li>
+		<li> <a href="results.html">Results</a> </li>
+		<li> <a href="future.html">Future</a> </li>
+		<li> <a href="team.html">Team</a> </li>
+		<li> <a href="sponsors.html">Sponsors</a> </li>
+
+		</ul> 
+		
+		
+		<ul class="nav navbar-nav navbar-right"> 
+		  <li><a href="contact.html" >Contact</a></li> 
+		   </ul>  </div> 
+	
+	<div class="bs-docs-header" id="content" tabindex="-1" style ="background-color: #2783E8;"> <div class="container-fluid" ><div class="row">
+  <div class="col-xs-12 col-md-8 jumbotron"><h1 style="color: white; padding: 10px 10px 10px 20px">Design 
+  
+  </h1>
+  
+  <p style="color:white; font-size:160%; padding-left: 20px">There are several steps to this part. Firstly, a monomer is needed in which the monomer should be stable, highly modifiable and easy to fold. Then, the connection was thought of, we needed a connection that is strong enough, but is modifiable and possibly reversible. Finally, we needed to pair this connection with switches such as aptamers to enable aggregation through ligand binding or other external factors.</p></div>
+  <div class="col-md-4 col-xs-12 text-center">
+
+
+    <div><div class="text-center"><img  src="design/sim1.gif"  alt=""/></div></div>
+
+  </div>
+		</div></div></div>
+	    
+	    
+	    <br> 
+	
+	</header>
+
+
+<!-- This is the button -->
+
+	
+    <div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+                            <button data-toggle="collapse" style="position: absolute; z-index: 1;" href="#collapseExample" role="button" aria-expanded="false"   class="btn btn-info">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Open Menu</span>
+                            </button>
+    </div> 
+
+
+
+
+
+	
+<!-- This is the mobile menu -->
+
+
+<div class="hidden-md hidden-lg hidden-xl" style="position: fixed; bottom: 10%; left: 5px;">
+
+<ul id="collapseExample" class="nav nav-pills nav-stacked collapse"  style="; z-index: -1;font-size: 1em !important; padding: 5% 5% 10% 20px">
+                   
+                   
+                    <li><a href="#sec1">Monomer design</a></li>
+                    <li><a href="#sec2">Connection 1</a></li>
+          <li><a href="#sec2-2">Connection 2</a></li>
+                    <li><a href="#sec2-3">Connection 3</a></li>
+                    <li><a href="#sec3">Trigger</a></li>
+                    <br>    
+          <p style="padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
+                  
+                </ul>
+
+</div>
+  
+
+
+<!-- This is the pc menu -->
+
+
+ <aside class="hidden-xs hidden-sm col-md-2" id="navbarCollapse" >
+        
+           
+<div id="demo">
+
+
+
+
+            <nav  id="myScrollspy">
+              	
+               	
+                <ul id="sdnav" class="hidden-xs hidden-sm nav nav-pills nav-stacked"  data-spy="affix" data-offset-top="205" style="font-size: 1em !important; padding: 1px 1px 1px 20px">
+                   
+                   
+                    <li><a href="#sec1">Monomer design</a></li>
+                    <li><a href="#sec2">Connection 1</a></li>
+					<li><a href="#sec2-2">Connection 2</a></li>
+                    <li><a href="#sec2-3">Connection 3</a></li>
+                    <li><a href="#sec3">Trigger</a></li>
+                    <br>    
+					<p style="padding 1px 1px 1px 20px"><a  href=#top>Back to top</a></p>
+                	
+                </ul>
+	 		</nav>
+        </div>
+ </aside>
+        
+        
+	<div class="container col-md-8 jumbotron" style="z-index: -1;">
+  <h2 class="page-header" id="sec1">Monomer design</h2>
+  <p>We decided to use the 2D triangle design that has been previously proposed by Rothemund and utilizes the m13mp18 viral ssDNA scaffold. We decided to use this design as this design have been used for other purposes and that this design is rather stable and easy to fold. The design itself is a flat equilateral triangle, however we had to make changes due to funding by tuning down the length of the sides to around 203 bp or 64.5nm in length (refer to fig 1.1). Nevertheless, there is a possibility where the excess scaffold might block and interrupt the process of forming polymers. Furthermore, the triangle has 3 sides of equal length that can help in forming polymers. Finally, modifications for connections can also be attempted by modifying the strands at the sides of the triangles while modifications to add function can be attempted by modifying the staple strands in the center part of the triangle. The monomer has also been simulated by using the webserver <a href="https://cando-dna-origami.org/">CanDo</a> and the result looks stable as seen in fig 1.2.</p>
+      <figure class="text-center">
+	  
+	  			<img class="  center-block" style="" src="design/monomer.png" width="70%" height="auto" alt=""/>
+	 
+	
+           <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 1.1. The designed triangle monomer.</figcaption>
+	 	 </figure>
+
+    <figure class="text-center">    
+          <img class="  center-block" style="" src="design/sim1.gif" width="70%" height="auto" alt=""/>
+           <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 1.2. Simulation using CanDo webserver.</figcaption>
+     </figure> 
+  <br>
+  <a href="design/monomercadnano.json"><button type="button" class="btn btn-primary">caDNAno .json file</button></a>
+	   <a href="design/monomerstaple.xlsx"><button type="button" class="btn btn-secondary" >sequence spreadsheet</button></a>
+  <br><br>
+  
+  <h2 class="page-header" id="sec2">Connection design</h2>
+  <p>In this section, designs of connection between monomers will be discussed as a mean to swarm the nanostructures. The triangular monomer is simplified by using fig 2.1 to better explain the mechanism between the connections. This simplified monomer only shows parts of the outermost regions consisting of staples (red) and scaffold (blue) as the connection designs utilize similar mechanisms but repeated over the stretch of sides of the triangle. X, Y, and Z show the different sides of the monomers. </p>
+  <figure class="text-center">
+	  
+	  			<img class="  center-block" src="design/monomersimple.png" width="40%" height="auto" alt=""/>
+	 
+	
+ 	<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 2.1. Simplified version of the monomer designed.</figcaption>
+	 	 	</figure>
+  
+  <h2 class="page-header" id="sec2-1">Connection design 1 - through strand replacement</h2>
+  <p>At first, we were looking at a strong but not necessarily the most feasible connection. Therefore, we came up with an idea to replace some staple strands at one side of the monomer with a longer and more thermodynamically stable staple strands. After annealing the previous staple strands, temperature will be raised up and the longer strand will have two binding positions in 2 monomers and connect them as seen in fig 3.1-3.3. This design has a flaw however in which the longer staples might just end up replacing the shorter staples while binding to two sites of a single monomer. The efficiency of connection was observed to be really low and which prompted us to think of different mechanisms. Fig 3.4 shows the simplified drawing of the mechanism.</p>
+  <figure class="text-center">
+  		<img class="  center-block" src="design/design2/dimerhighlight.png" width="70%" height="auto" alt=""/>
+	  <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 3.1. The positions where the staples to replace are located.</figcaption>
+  			</figure >
+	  <figure class="text-center">
+  	  	<img class="  center-block" src="design/design2/dimerconnected.png" width="70%" height="auto" alt=""/>
+				<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 3.2. The planned replacement of the staples.</figcaption>
+	  </figure>
+	  <figure class="text-center">
+  	  	  	<img class="  center-block" src="design/design2/dimerconnection.png" width="60%" height="auto" alt=""/>
+				<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 3.3. Detailed view of the connection, spacers are put in the staple to prevent the two monomers from getting to close to each other.</figcaption>
+	  </figure>
+	  <figure class="text-center">
+  	  	  	<img class="  center-block" src="design/design2/connection1fig.png" width="95%" height="auto" alt=""/>
+				<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 3.4. Simplified figure of the connection. Addition of X' and X" plus heat induces the replacement of former staples and connect both monomers.</figcaption>
+	  </figure>
+	  
+	  
+  
+	  <p>The caDNAno file for the monomers are unchanged. Only additional strands were added to replace some of the original staple strands.</p>
+  	   <a href="design/replacementstrand.xlsx"><button type="button" class="btn btn-secondary" >sequence spreadsheet</button></a>
+  	   
+  	   <br>
+  	   
+  	   
+  	   
+  	   
+  <h2 class="page-header" id="sec2-2">Connection design 2 – through complementary protruding strands</h2>
+	  	<p>As the first connection design proved to be ineffective, we thought of another way to connect the monomers. This connection design involves protruding staples that are complementary to each other. The annealing process to fold the monomers have to be performed separately to create 2 similar monomers only distinct at the side where the staples are modified.  </p>
+	  		
+ 	  		<figure class="text-center">
+  			  <img class="  center-block" src="design/connection2/connection 2 closeup.png" width="80%" height="auto" alt=""/>
+				<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 3.1 Proposed connection through hybridization of orthogonal protruding strands. A and A’ shows complementary protruding strands that can hybridize. T spacers are put between the sequence of the staples and the orthogonal sequences.</figcaption>
+	  		</figure>
+	  		
+	  	<p>The protruding strands utilize orthogonal ssDNA (2) that have a low chance of producing secondary structures as tested by using Nupack (3) accessible from www.nupack.org . The results of hybridization simulations are shown in Fig 3.2 respectively. The strands 73-75XYT shows the staples that are used for hybridization in which X denotes A or A’ (denoted by A and B) of fig 3.1 and Y denotes the number of thymine spacer. These results show that the orthogonal strands will hybridize with the strands of the other monomer with high efficiency.</p>
+	  	
+	  		<figure class="text-center">
+  			  <img class="  center-block" src="design/connection2/7XA3T.png" width="95%" height="auto" alt=""/>
+				<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 3.2. Simulation through Nupack under the condition 1 μM of ssDNA, 25°C, 0.1M NaCl and 0.01M MgCl2 for strands with 3 T spacers.</figcaption>
+	  		</figure>
+	  		
+	  		<figure class="text-center">
+  			  <img class="  center-block" src="design/connection2/7XA8T.png" width="95%" height="auto" alt=""/>
+				<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 3.3. Simulation through Nupack under the condition 1 μM of ssDNA, 25°C, 0.1M NaCl and 0.01M MgCl2 for strands with 8 T spacers.</figcaption>
+	  		</figure>
+	  	
+	  	<p>The caDNAno file for the monomers was changed as the staples were adjusted to accomodate for the complementary protruding strands. Furthermore, additional strands were added to replace some of the original staple strands. The staples for the monomer are the same, however staples 73-90 of the original design are to be replaced by staples specified in the following spreadsheet.</p>
+      <a href="design/monomercadnano2.json"><button type="button" class="btn btn-primary">caDNAno .json file</button></a>
+
+      <a href="design/connection2/connection2staples.xlsx"><button type="button" class="btn btn-secondary" >sequence spreadsheet</button></a>
+  	   
+	  	
+	  	
+	  	
+	  		
+  		
+  <h2 class="page-header" id="sec2-3">Connection design 3 - through bridged protruding strands</h2>
+	  <p>This connection mechanism also employs protruding strands that protrude from the triangular monomers but cannot hybridize with each other. Hybridization will occur when another longer strand that complements both strands (shown as F) gets introduced into the solution as depicted in fig 4.1. </p>
+  			
+  			<figure class="text-center">
+  			  <img class="  center-block" src="design/connection3/connection3fig.png" width="80%" height="auto" alt=""/>
+				<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 4.1. Hybridization of introduced strand F and orthogonal protruding strands A and B induces connection between the sides of the monomers.  </figcaption>
+            </figure>
+	  	
+  	  <p>This mechanism adds flexibility to the design as it is possible to elongate this connector strand (bridge) and incites deactivation through swarming by using DNA fuel strands (4) to release the bridge as seen in fig 4.2.</p>
+  		
+  			<figure class="text-center">
+  	  			<img class="  center-block" src="design/connection3/connection3deactivatefig.png" width="80%" height="auto" alt=""/>
+				<figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 4.2. In this figure, addition of longer strand F incites formation of connection between the sides of the monomers. With the introduction of F’, the strand F gets released and thus the connection is also broken.</figcaption>
+	  		</figure>
+	  		
+	  	<p>In the design of the bridge, we found that there are parts with 4 or more repeated guanine bases with chances of forming guanine quadruplex (5) which is a stable secondary structure which makes it harder both to synthesize and assist in connecting the monomers. Therefore, we replaced some of the guanine bases with adenosine as adenosine can wobble-pair with cytosine (6). </p>
+	  	<p>The bridges have been tested in nupack and was able to form rather stable secondary structures which means that it might have difficulty in connecting the protruding strands. Nevertheless, hybridization between the bridge strands and the protruding strands have also been tested to 100% form hybridized structure involving the 3 complexes when the condition is 25°C, 0.1M NaCl and 0.01M MgCl2. </p>
+  		
+        <p>The bridges have been tested in nupack and was able to form rather stable secondary structures (refer to fig 4.3) which means that it might have difficulty in connecting the protruding strands. Nevertheless, hybridization between the bridge strands and the protruding strands have also been tested to form hybridized structures involving the 3 complexes when the condition is 25°C, 0.1M NaCl and 0.01M MgCl2 at 100% except for sequence 77. This should not be a problem as the other 5 combinations should hybridize without any problem. </p>
+
+            <figure class="text-center">
+              <img class="  center-block" src="design/connection3/bridgesecondaryst.png" width="80%" height="auto" alt=""/>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 4.3. The predicted secondary structure of the bridges.  </figcaption>
+            </figure>
+
+            <figure class="text-center">
+              <img class="  center-block" src="design/connection3/hybridizationresult.png" width="50%" height="auto" alt=""/>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 4.4. The probability of hybridization when 1 μM of each strands are present.  </figcaption>
+            </figure>
+
+ 	   
+ 	   <p>The caDNAno file for the monomers has not changed. Only additional strands were added to replace some of the original staple strands along with the bridge.</p>
+  	   <a href="design/connection3/connection3.xlsx"><button type="button" class="btn btn-secondary" >sequence spreadsheet</button></a>
+
+       <br>
+  	   
+  	   <br>
+
+  <h2 class="page-header" id="sec3">Trigger mechanism - Aptamer mediated lock</h2>
+        <p> 
+          In this part, we are planning to utilize the design by Li et al. (7) as well as incorporating connection design 2. By using this, we will be able to control whether the protruding orthogonal strands will be exposed or not through ligand binding. In principle, the flat sheet will have side fasteners that can close it into tube and when ligand binding is initiated it will open, exposing the orthogonal strand located perpendicular to the sheet and inside the tube (connection design 2). This sheet will then serve as an adapter between two monomers. The mechanism is further explained on fig 5.1 and the target activation of the module is on fig 5.2. Nupack simulation shows that the fasteners are able to fasten the structure at a high efficiency as shown on figure 5.2.
+        </p>
+
+        <p>
+          The adapter uses the m13mp15 scaffold strand and the staple strands are as described in the following spreadsheet:
+        </p>
+            <a href="design/trigger/trigger.xlsx"><button type="button" class="btn btn-secondary" >sequence spreadsheet</button></a> 
+
+            <br><br>
+                        <br>
+
+
+
+            <figure class="text-center">
+              <img class="  center-block" src="design/trigger/aptamer_lock.png" width="70%" height="auto" alt=""/>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.1. 3D concept image showing the addition of fasteners to lock the adapter and concealing the protruding strand on the face of the sheet.</figcaption>
+            </figure>
+
+            <figure class="text-center">
+              <img class="  center-block" src="design/trigger/aptamer_unlock.png" width="80%" height="auto" alt=""/>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.2. Activation of the module through nucleolin binding.</figcaption>
+            </figure>
+
+            <figure class="text-center">
+              <img class="  center-block" src="design/trigger/f50comp15nupack.png" width="50%" height="auto" alt=""/>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.3. Simulation through Nupack under the condition 1 μM of ssDNA, 25°C, 0.1M NaCl and 0.01M MgCl2 for the aptamer and the complementary strand.</figcaption>
+            </figure>
+
+        <p>
+          The problem with this design as shown in fig 5.4 is that if the sheet length is longer than the triangle side length, it will not be possible to form polymers due to steric hindrance by the sheet that hinders the attachment of successive monomers to the initiating monomer. This, however, can be solved by either elongating the sides of the triangular monomer or by redesigning the tube to make it shorter.
+        </p>
+            <figure class="text-center">
+              <img class="  center-block" src="design/trigger/adapterlimit.png" width="50%" height="auto" alt=""/>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.4. Limitation to the mechanism due to smaller monomer.</figcaption>
+            </figure>
+
+        <p>
+          To add the protruding strands to the design, we firstly edited strands number 55, 79, 103, 127, 151, and 175 at their 5’ ends to resemble robot B from connection design 2. The orientation was also put on top, which means that after the addition of fasteners to close the tube, the protruding strands are expected to be hidden well inside the tube, hidden from the protruding complementary strands of the monomers.
+        </p>
+        <p>
+          The sequences for the protruding strands are available in the following spreadsheet:
+        </p>
+  		      <a href="design/trigger/protruding.xlsx"><button type="button" class="btn btn-secondary" >sequence spreadsheet</button></a>
+
+            <br><br><br>
+
+  		  <p>
+          In this case, the addition of nucleolin will open the tube by releasing the fastener and thus exposing the protruding strands. This enables hybridization with protruding strands of robot A. Therefore, if we are able to connect the sheet onto another robot (remember that protruding strands from robot B were used in the sheet), we can control the connection of 2 different robots through this adapter.
+        </p>
+        <p>
+          Before using nucleolin however, we try unlocking and relocking the structure through thermodynamically favorable strand (key and anti-key) additions. Firstly, after the addition of the fasteners, the sheet will close into a tube. Then, after the addition of the key, the cylinder will open to form sheet and the protruding strands will be exposed and free to hybridize with monomers. Addition of anti-key will then reverse the process and close the sheet into tube again. Details to this mechanism is shown in fig 5.5.
+        </p>
+            <figure class="text-center">
+              <img class="  center-block" src="design/trigger/lockandkey.png" width="80%" height="auto" alt=""/>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.5. Triggering mechanism by using ssDNA (key) and release by anti-key. </figcaption>
+            </figure>
+  		  <p>
+          Nupack simulation at 25C shows that the key will be able to hybridize with the strands of the fastener, unlocking the structure similar to unlocking by nucleolin to a high efficiency: around 98% in the simulation. Furthermore, the addition of anti-key has been shown to recover the previous structure efficiently, also at around 98% according to the simulation. The results are shown in fig. 5.6 and fig 5.7 respectively.
+        </p>
+            <figure class="text-center">
+              <img class="  center-block" src="design/trigger/antikeylock.png" width="50%" height="auto" alt=""/>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.6. Simulation through Nupack under the condition 1 μM of ssDNA, 25°C, 0.1M NaCl and 0.01M MgCl2 showing unlocking using key strand.</figcaption>
+            </figure>
+            <figure class="text-center">
+              <img class="  center-block" src="design/trigger/keyunlock.png" width="50%" height="auto" alt=""/>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.7. Simulation through Nupack under the condition 1 μM of ssDNA, 25°C, 0.1M NaCl and 0.01M MgCl2 to release the key and restore the tube formation.
+
+            </figcaption>
+            </figure>
+
+        <p>
+          The sequences of the key and anti-key are available in the following spreadsheet:
+        </p>
+            <a href="design/trigger/key.xlsx"><button type="button" class="btn btn-secondary" >sequence spreadsheet</button></a>
+
+            <br>
+
+
+
+
+
+
+  <h2 class="page-header" id="">References</h2>
+
+      <ol>
+          <li>
+            Rothemund,P.W.K. (2006) Folding DNA to create nanoscale shapes and patterns. Nature, 440, 297–302.
+          </li>
+
+          <li>
+            Kitajima,T., Takinoue,M., Shohda,K. and Suyama,A. (2008) Design of Code Words for DNA Computers and Nanostructures with Consideration of Hybridization Kinetics. In Garzon,M.H., Yan,H. (eds), DNA Computing. Springer Berlin Heidelberg, Berlin, Heidelberg, Vol. 4848, pp. 119–129.
+          </li>
+
+          <li>
+            Zadeh,J.N., Steenberg,C.D., Bois,J.S., Wolfe,B.R., Pierce,M.B., Khan,A.R., Dirks,R.M. and Pierce,N.A. (2011) NUPACK: Analysis and design of nucleic acid systems. Journal of Computational Chemistry, 32, 170–173.
+          </li>
+
+          <li>
+            Yurke,B., Turberfield,A.J., Mills,A.P., Simmel,F.C. and Neumann,J.L. (2000) A DNA-fuelled molecular machine made of DNA. Nature, 406, 605–608.
+          </li>
+
+          <li>
+            Burge,S., Parkinson,G.N., Hazel,P., Todd,A.K. and Neidle,S. (2006) Quadruplex DNA: sequence, topology and structure. Nucleic Acids Research, 34, 5402–5415.
+          </li>
+
+          <li>
+            Leontis,N.B., Stombaugh,J. and Westhof,E. (2002) The non-Watson-Crick base pairs and their associated isostericity matrices. Nucleic Acids Res., 30, 3497–3531.
+          </li>
+
+          <li>
+            Li,S., Jiang,Q., Liu,S., Zhang,Y., Tian,Y., Song,C., Wang,J., Zou,Y., Anderson,G.J., Han,J.-Y., et al. (2018) A DNA nanorobot functions as a cancer therapeutic in response to a molecular trigger in vivo. Nature Biotechnology, 36, 258–264.
+          </li>
+
+      </ol>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+	
+	
+</body>
+</html>    
+
