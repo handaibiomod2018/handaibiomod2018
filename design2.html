@@ -35,13 +35,12 @@
 		<li> <a href="results.html">Results</a> </li>
 		<li> <a href="future.html">Future</a> </li>
 		<li> <a href="team.html">Team</a> </li>
-		<li> <a href="sponsors.html">Sponsors</a> </li>
 
 		</ul> 
 		
 		
 		<ul class="nav navbar-nav navbar-right"> 
-		  <li><a href="contact.html" >Contact</a></li> 
+		  <li><a href="mailto:johannes.nicolaus@gmail.com?Subject=Biomod%202018" >Contact</a></li> 
 		   </ul>  </div> 
 	
 	<div class="bs-docs-header" id="content" tabindex="-1" style ="background-color: #2783E8;"> <div class="container-fluid" ><div class="row">
@@ -131,7 +130,7 @@
         
 	<div class="container col-md-8 jumbotron" style="z-index: -1;">
   <h2 class="page-header" id="sec1">Monomer design</h2>
-  <p>We decided to use the 2D triangle design that has been previously proposed by Rothemund and utilizes the m13mp18 viral ssDNA scaffold. We decided to use this design as this design have been used for other purposes and that this design is rather stable and easy to fold. The design itself is a flat equilateral triangle, however we had to make changes due to funding by tuning down the length of the sides to around 203 bp or 64.5nm in length (refer to fig 1.1). Nevertheless, there is a possibility where the excess scaffold might block and interrupt the process of forming polymers. Furthermore, the triangle has 3 sides of equal length that can help in forming polymers. Finally, modifications for connections can also be attempted by modifying the strands at the sides of the triangles while modifications to add function can be attempted by modifying the staple strands in the center part of the triangle. The monomer has also been simulated by using the webserver <a href="https://cando-dna-origami.org/">CanDo</a> and the result looks stable as seen in fig 1.2.</p>
+  <p>We decided to use the 2D triangle design that has been previously proposed by Rothemund (1) and utilizes the m13mp18 viral ssDNA scaffold. We decided to use this design as this design have been used for other purposes and that this design is rather stable and easy to fold. The design itself is a flat equilateral triangle, however we had to make changes due to funding by tuning down the length of the sides to around 203 bp or 64.5nm in length (refer to fig 1.1). Nevertheless, there is a possibility where the excess scaffold might block and interrupt the process of forming polymers. Furthermore, the triangle has 3 sides of equal length that can help in forming polymers. Finally, modifications for connections can also be attempted by modifying the strands at the sides of the triangles while modifications to add function can be attempted by modifying the staple strands in the center part of the triangle. The monomer has also been simulated by using the webserver <a href="https://cando-dna-origami.org/">CanDo</a> and the result looks stable as seen in fig 1.2.</p>
       <figure class="text-center">
 	  
 	  			<img class="  center-block" style="" src="design/monomer.png" width="70%" height="auto" alt=""/>
@@ -258,7 +257,7 @@
 
   <h2 class="page-header" id="sec3">Trigger mechanism - Aptamer mediated lock</h2>
         <p> 
-          In this part, we are planning to utilize the design by Li et al. (7) as well as incorporating connection design 2. By using this, we will be able to control whether the protruding orthogonal strands will be exposed or not through ligand binding. In principle, the flat sheet will have side fasteners that can close it into tube and when ligand binding is initiated it will open, exposing the orthogonal strand located perpendicular to the sheet and inside the tube (connection design 2). This sheet will then serve as an adapter between two monomers. The mechanism is further explained on fig 5.1 and the target activation of the module is on fig 5.2. Nupack simulation shows that the fasteners are able to fasten the structure at a high efficiency as shown on figure 5.2.
+          In this part, we are planning to utilize the design by Li et al. (7) as well as incorporating connection design 2. By using this, we will be able to control whether the protruding orthogonal strands will be exposed or not through ligand binding. In principle, the flat sheet will have side fasteners that can close it into tube and when ligand binding is initiated it will open, exposing the orthogonal strand located perpendicular to the sheet and inside the tube (connection design 2). This sheet will then serve as an adapter between two monomers. The flow of the mechanism is expalined on figure 5.1, is further explained on fig 5.2 and the target activation of the module is on fig 5.3. Nupack simulation shows that the fasteners are able to fasten the structure at a high efficiency as shown on figure 5.4.
         </p>
 
         <p>
@@ -269,29 +268,32 @@
             <br><br>
                         <br>
 
-
+            <figure class="text-center">
+              <img class="  center-block" src="design/trigger/trigger all.png" width="100%" height="auto" alt=""/>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.1. Overall mechanism of the trigger design.</figcaption>
+            </figure>
 
             <figure class="text-center">
               <img class="  center-block" src="design/trigger/aptamer_lock.png" width="70%" height="auto" alt=""/>
-                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.1. 3D concept image showing the addition of fasteners to lock the adapter and concealing the protruding strand on the face of the sheet.</figcaption>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.2. 3D concept image showing the addition of fasteners to lock the adapter and concealing the protruding strand on the face of the sheet.</figcaption>
             </figure>
 
             <figure class="text-center">
               <img class="  center-block" src="design/trigger/aptamer_unlock.png" width="80%" height="auto" alt=""/>
-                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.2. Activation of the module through nucleolin binding.</figcaption>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.3. Activation of the module through nucleolin binding.</figcaption>
             </figure>
 
             <figure class="text-center">
               <img class="  center-block" src="design/trigger/f50comp15nupack.png" width="50%" height="auto" alt=""/>
-                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.3. Simulation through Nupack under the condition 1 μM of ssDNA, 25°C, 0.1M NaCl and 0.01M MgCl2 for the aptamer and the complementary strand.</figcaption>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.4. Simulation through Nupack under the condition 1 μM of ssDNA, 25°C, 0.1M NaCl and 0.01M MgCl2 for the aptamer and the complementary strand.</figcaption>
             </figure>
 
         <p>
-          The problem with this design as shown in fig 5.4 is that if the sheet length is longer than the triangle side length, it will not be possible to form polymers due to steric hindrance by the sheet that hinders the attachment of successive monomers to the initiating monomer. This, however, can be solved by either elongating the sides of the triangular monomer or by redesigning the tube to make it shorter.
+          The problem with this design as shown in fig 5.5 is that if the sheet length is longer than the triangle side length, it will not be possible to form polymers due to steric hindrance by the sheet that hinders the attachment of successive monomers to the initiating monomer. This, however, can be solved by either elongating the sides of the triangular monomer or by redesigning the tube to make it shorter.
         </p>
             <figure class="text-center">
               <img class="  center-block" src="design/trigger/adapterlimit.png" width="50%" height="auto" alt=""/>
-                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.4. Limitation to the mechanism due to smaller monomer.</figcaption>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.5. Limitation to the mechanism due to smaller monomer.</figcaption>
             </figure>
 
         <p>
@@ -308,22 +310,22 @@
           In this case, the addition of nucleolin will open the tube by releasing the fastener and thus exposing the protruding strands. This enables hybridization with protruding strands of robot A. Therefore, if we are able to connect the sheet onto another robot (remember that protruding strands from robot B were used in the sheet), we can control the connection of 2 different robots through this adapter.
         </p>
         <p>
-          Before using nucleolin however, we try unlocking and relocking the structure through thermodynamically favorable strand (key and anti-key) additions. Firstly, after the addition of the fasteners, the sheet will close into a tube. Then, after the addition of the key, the cylinder will open to form sheet and the protruding strands will be exposed and free to hybridize with monomers. Addition of anti-key will then reverse the process and close the sheet into tube again. Details to this mechanism is shown in fig 5.5.
+          Before using nucleolin however, we try unlocking and relocking the structure through thermodynamically favorable strand (key and anti-key) additions. Firstly, after the addition of the fasteners, the sheet will close into a tube. Then, after the addition of the key, the cylinder will open to form sheet and the protruding strands will be exposed and free to hybridize with monomers. Addition of anti-key will then reverse the process and close the sheet into tube again. Details to this mechanism is shown in fig 5.6.
         </p>
             <figure class="text-center">
               <img class="  center-block" src="design/trigger/lockandkey.png" width="80%" height="auto" alt=""/>
-                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.5. Triggering mechanism by using ssDNA (key) and release by anti-key. </figcaption>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.6. Triggering mechanism by using ssDNA (key) and release by anti-key. </figcaption>
             </figure>
   		  <p>
-          Nupack simulation at 25C shows that the key will be able to hybridize with the strands of the fastener, unlocking the structure similar to unlocking by nucleolin to a high efficiency: around 98% in the simulation. Furthermore, the addition of anti-key has been shown to recover the previous structure efficiently, also at around 98% according to the simulation. The results are shown in fig. 5.6 and fig 5.7 respectively.
+          Nupack simulation at 25C shows that the key will be able to hybridize with the strands of the fastener, unlocking the structure similar to unlocking by nucleolin to a high efficiency: around 98% in the simulation. Furthermore, the addition of anti-key has been shown to recover the previous structure efficiently, also at around 98% according to the simulation. The results are shown in fig. 5.7 and fig 5.8 respectively.
         </p>
             <figure class="text-center">
               <img class="  center-block" src="design/trigger/antikeylock.png" width="50%" height="auto" alt=""/>
-                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.6. Simulation through Nupack under the condition 1 μM of ssDNA, 25°C, 0.1M NaCl and 0.01M MgCl2 showing unlocking using key strand.</figcaption>
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.7. Simulation through Nupack under the condition 1 μM of ssDNA, 25°C, 0.1M NaCl and 0.01M MgCl2 showing unlocking using key strand.</figcaption>
             </figure>
             <figure class="text-center">
               <img class="  center-block" src="design/trigger/keyunlock.png" width="50%" height="auto" alt=""/>
-                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.7. Simulation through Nupack under the condition 1 μM of ssDNA, 25°C, 0.1M NaCl and 0.01M MgCl2 to release the key and restore the tube formation.
+                <figcaption class="jumbotron" style="font-size:150%; text-align: center">Fig 5.8. Simulation through Nupack under the condition 1 μM of ssDNA, 25°C, 0.1M NaCl and 0.01M MgCl2 to release the key and restore the tube formation.
 
             </figcaption>
             </figure>
